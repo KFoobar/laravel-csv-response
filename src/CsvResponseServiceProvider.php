@@ -22,7 +22,7 @@ class CsvResponseServiceProvider extends ServiceProvider
             __DIR__ . '/../config/csv-response.php' => config_path('csv-response.php'),
         ], 'csv-response-config');
 
-        Response::macro('csv', function (array $rows, ?array $options = [], ?bool $inline = true) {
+        Response::macro('csv', function (array $rows, array $options = [], bool $inline = true) {
             return ($inline === true)
                 ? CsvResponseFactory::inline($rows, $options)
                 : CsvResponseFactory::download($rows, $options);
