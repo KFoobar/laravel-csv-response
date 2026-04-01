@@ -61,6 +61,11 @@ class CsvResponseFactory
     public static function stream(array $rows, array $options = []): void
     {
         $handle = fopen('php://output', 'w');
+
+        if ($handle === false) {
+            return;
+        }
+
         $delimiter = $options['delimiter'] ?? ';';
 
         if (!empty($options['headers'])) {
