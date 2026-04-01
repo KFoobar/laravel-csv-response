@@ -14,6 +14,6 @@ return [
      *
      * @var string
      */
-    'encoding' => 'utf8',
+    'encoding' => 'UTF-8',
 
 ];
