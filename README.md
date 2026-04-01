@@ -1,4 +1,4 @@
-# Laravel Favicon
+# Laravel CSV Response Macro
 
 A lightweight Laravel package that adds a response macro for streaming CSV data directly to the browser, optimized for memory efficiency and designed to handle large datasets with ease.
 
